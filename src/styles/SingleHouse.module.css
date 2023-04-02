@@ -1,0 +1,86 @@
+.price {
+  color: rgb(0, 134, 0);
+}
+
+.card {
+  transition: all 0.25s;
+  cursor: pointer;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 340px;
+  height: 190px;
+  margin: 30px;
+  overflow: hidden;
+  box-sizing: border-box;
+  box-shadow: 2px 2px 5px 1px black;
+}
+.card img {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  z-index: -100;
+  filter: brightness(70%);
+}
+
+.title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  background-color: rgb(0, 0, 0);
+  padding: 1px 5px;
+  color: white;
+  border: 2px solid rgb(250, 231, 123);
+  border-radius: 5px;
+  text-align: center;
+}
+
+.rent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 50px;
+  background-color: rgb(32, 32, 32);
+  color: rgb(3, 216, 3);
+  font-weight: 700;
+  font-size: 20px;
+  border-bottom-right-radius: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card:hover {
+  transition: 0.25s;
+}
+.card:hover .title {
+  opacity: 0;
+  transition: 0.25s;
+}
+.card:hover img {
+  filter: brightness(100%);
+  transition: 0.25s;
+}
+.card:hover .rent {
+  transition: 0.25s;
+  opacity: 0;
+}
+
+@media (max-width: 799px) {
+  .card {
+    margin: 15px;
+    width: 330px;
+    height: 170px;
+  }
+  .title {
+    font-weight: 700;
+    background-color: rgb(0, 0, 0);
+    padding: 1px 5px;
+    color: white;
+    border: 2px solid rgb(250, 231, 123);
+    border-radius: 5px;
+    text-align: center;
+  }
+}

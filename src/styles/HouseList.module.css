@@ -1,0 +1,48 @@
+.find {
+  scroll-margin-top: 80px;
+}
+.options {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.row {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 300px;
+}
+
+.slider {
+  width: 500px;
+}
+
+.houses {
+  width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  align-items: center;
+}
+
+@media (max-width: 1200px) {
+  .houses {
+    width: 800px;
+  }
+}
+
+@media (max-width: 799px) {
+  .houses {
+    width: 340px;
+  }
+  h1 {
+    text-align: center;
+  }
+  .slider {
+    width: 350px;
+  }
+}

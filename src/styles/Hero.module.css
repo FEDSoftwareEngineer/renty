@@ -1,0 +1,95 @@
+.hero {
+  width: 100%;
+  height: 600px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.bg {
+  width: 100%;
+  position: absolute;
+  z-index: -100;
+  top: 0;
+}
+
+.card {
+  border: 2px solid #3a3a3a;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 700px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: inset -2px -2px #111, inset -4px -4px #111;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.card hr {
+  background-color: #ffc107;
+
+  height: 8px;
+  border-radius: 5px;
+  width: 200px;
+
+  transform: translateY(-40px);
+  border: none;
+}
+
+.title {
+  color: #ffffff;
+
+  font-size: 36px;
+  text-align: center;
+  font-weight: 300;
+}
+
+.btn {
+  padding: 15px;
+  font-size: 23px;
+  border-radius: 20px;
+  background-color: #ff9800;
+  cursor: pointer;
+  color: black;
+
+  box-shadow: -2px 2px #ffc107, -4px 4px #ffc107, -6px 6px #ffc107,
+    -8px 8px #ffc107, -10px 10px #ffc107, -12px 12px #ffc107, -14px 14px #ffc107,
+    -16px 16px #ffc107, -18px 18px #ffc107, -20px 20px #ffc107;
+}
+
+.btn:hover {
+  transition: 0.25s;
+
+  background-color: #fb8c00;
+}
+
+.btn svg {
+  margin-right: 10px;
+}
+@media (max-width: 900px) {
+  .bg {
+    width: 200%;
+  }
+}
+@media (max-width: 500px) {
+  .card {
+    border: 2px solid #3a3a3a;
+    width: 90%;
+    height: 200px;
+    box-shadow: inset -2px -2px #111, inset -4px -4px #111;
+    padding: 20px;
+  }
+  .card h1 {
+    font-size: 27px;
+  }
+  .bg {
+    width: 300%;
+  }
+  .btn {
+    transform: scale(0.8);
+  }
+}

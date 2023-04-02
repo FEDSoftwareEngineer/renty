@@ -1,0 +1,17 @@
+.about {
+  padding: 0 0.5rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  text-align: center;
+}
+.about h1 {
+  color: red;
+  font-weight: 800;
+}
+.about p {
+  font-size: 20px;
+  font-weight: 600;
+}

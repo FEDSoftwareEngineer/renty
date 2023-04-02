@@ -1,0 +1,44 @@
+.details {
+}
+
+.row {
+  display: flex;
+  padding: 0 30px;
+}
+.description {
+  padding: 0 50px;
+  color: rgba(0, 0, 0, 0.75);
+  width: 50%;
+  margin-right: 40px;
+}
+.description p {
+  font-size: 1.1rem;
+  font-weight: 450;
+}
+.info {
+  width: 50%;
+}
+
+.details h3 {
+  color: rgba(0, 0, 0, 0.75);
+  font-size: 1.2rem;
+  font-weight: 350;
+  margin: 25px 0;
+}
+
+.details h2 {
+  font-size: 1.65rem;
+}
+
+@media (max-width: 1000px) {
+  .row {
+    flex-direction: column;
+  }
+  .description {
+    width: 100%;
+    padding: 0 0px;
+  }
+  .info {
+    width: 100%;
+  }
+}

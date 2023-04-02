@@ -1,0 +1,19 @@
+.notFound {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  text-align: center;
+}
+.notFound h1 {
+  color: red;
+  font-weight: 800;
+}
+.notFound p {
+  font-size: 20px;
+  font-weight: 600;
+}
+.notFound a {
+  font-weight: 600;
+}
