@@ -20,7 +20,7 @@ const Slider = ({ title, images }) => {
       );
     }, 5000);
     return () => clearInterval(timerId);
-  }, [images.length]);
+  }, [images.length, updateIndex]);
 
   return (
     <>
