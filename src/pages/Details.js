@@ -21,7 +21,7 @@ const Details = () => {
     } else {
       navigate("/404");
     }
-  }, []);
+  }, [id, navigate]);
 
   return (
     <div className={style.details} id="details">
