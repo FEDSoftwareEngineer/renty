@@ -35,12 +35,50 @@ import garden1 from "./images/garden1.webp";
 import garden2 from "./images/garden2.webp";
 import garden3 from "./images/garden3.webp";
 import garden4 from "./images/garden4.webp";
+import LQbed1 from "./images/LQ/bed1.webp";
+import LQbed2 from "./images/LQ/bed2.webp";
+import LQbed3 from "./images/LQ/bed3.webp";
+import LQbed4 from "./images/LQ/bed4.webp";
+import LQbed5 from "./images/LQ/bed5.webp";
+import LQbed6 from "./images/LQ/bed6.webp";
+import LQbed7 from "./images/LQ/bed7.webp";
+import LQbed8 from "./images/LQ/bed8.webp";
+import LQbed9 from "./images/LQ/bed9.webp";
+import LQbed10 from "./images/bed10.webp";
+import LQlivingroom1 from "./images/LQ/livingroom1.webp";
+import LQlivingroom2 from "./images/LQ/livingroom2.webp";
+import LQlivingroom3 from "./images/LQ/livingroom3.webp";
+import LQlivingroom4 from "./images/LQ/livingroom4.webp";
+import LQlivingroom5 from "./images/LQ/livingroom5.webp";
+import LQlivingroom6 from "./images/LQ/livingroom6.webp";
+import LQlivingroom7 from "./images/LQ/livingroom7.webp";
+import LQlivingroom8 from "./images/LQ/livingroom8.webp";
+import LQlivingroom9 from "./images/LQ/livingroom9.webp";
+import LQlivingroom10 from "./images/LQ/livingroom10.webp";
+import LQkitchen1 from "./images/LQ/kitchen1.webp";
+import LQkitchen2 from "./images/LQ/kitchen2.webp";
+import LQkitchen3 from "./images/LQ/kitchen3.webp";
+import LQkitchen4 from "./images/LQ/kitchen4.webp";
+import LQkitchen5 from "./images/LQ/kitchen5.webp";
+import LQkitchen6 from "./images/LQ/kitchen6.webp";
+import LQkitchen7 from "./images/LQ/kitchen7.webp";
+import LQkitchen8 from "./images/LQ/kitchen8.webp";
+import LQkitchen9 from "./images/LQ/kitchen9.webp";
+import LQkitchen10 from "./images/LQ/kitchen10.webp";
+import LQgaradge1 from "./images/LQ/garadge1.webp";
+import LQgaradge2 from "./images/LQ/garadge2.webp";
+import LQgaradge3 from "./images/LQ/bed3.webp";
+import LQgarden1 from "./images/LQ/garden1.webp";
+import LQgarden2 from "./images/LQ/garden2.webp";
+import LQgarden3 from "./images/LQ/garden3.webp";
+import LQgarden4 from "./images/LQ/garden4.webp";
 
 const data = [
   {
     title: "Big house in central city",
     rooms: 8,
     images: [bed1, livingroom1, kitchen1],
+    LQimages: [LQbed1, LQlivingroom1, LQkitchen1],
     capacity: 5,
     price: 2300,
     description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, ab.
@@ -69,6 +107,7 @@ const data = [
     title: "decent house with nice view",
     rooms: 3,
     images: [bed2, livingroom2, kitchen2],
+    LQimages: [LQbed2, LQlivingroom2, LQkitchen2],
     capacity: 2,
     price: 5300,
     description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, ab.
@@ -98,6 +137,7 @@ const data = [
     rooms: 2,
     garden: true,
     images: [bed3, livingroom3, kitchen3, garden1],
+    LQimages: [LQbed3, LQlivingroom3, LQkitchen3, LQgarden1],
     capacity: 2,
     price: 8000,
     featured: true,
@@ -127,6 +167,7 @@ const data = [
     title: "Penthouse in EB2",
     rooms: 15,
     images: [bed4, livingroom4, kitchen4, garadge1],
+    LQimages: [LQbed4, LQlivingroom4, LQkitchen4, LQgaradge1],
     capacity: 12,
     garadge: true,
     price: 7000,
@@ -156,6 +197,7 @@ const data = [
     title: "Apartment in EC street 11",
     rooms: 2,
     images: [bed5, livingroom5, kitchen5],
+    LQimages: [LQbed5, LQlivingroom5, LQkitchen5],
     capacity: 6,
     price: 4600,
     description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, ab.
@@ -185,6 +227,7 @@ const data = [
     title: "2 floor house for rich people",
     rooms: 9,
     images: [bed6, livingroom6, kitchen6, garden2, garadge2],
+    LQimages: [LQbed6, LQlivingroom6, LQkitchen6, LQgarden2, LQgaradge2],
     capacity: 9,
     garden: true,
     garadge: true,
@@ -216,6 +259,7 @@ const data = [
     title: "luxery House with pool",
     rooms: 2,
     images: [bed7, livingroom7, kitchen7, garden3],
+    LQimages: [LQbed7, LQlivingroom7, LQkitchen7, LQgarden3],
     capacity: 4,
     garden: true,
     price: 3100,
@@ -246,6 +290,7 @@ const data = [
     title: "Big house in central berlin",
     rooms: 3,
     images: [bed8, livingroom8, kitchen8, garadge3],
+    LQimages: [LQbed8, LQlivingroom8, LQkitchen8, LQgaradge3],
     capacity: 5,
     garadge: true,
     price: 3300,
@@ -275,6 +320,7 @@ const data = [
     title: "Big house with outdoor garden",
     rooms: 4,
     images: [bed9, livingroom9, kitchen9, garden4],
+    LQimages: [LQbed9, LQlivingroom9, LQkitchen9, LQgarden4],
     capacity: 5,
     garden: true,
     price: 5500,
@@ -304,6 +350,7 @@ const data = [
     title: "3 floors giant house",
     rooms: 3,
     images: [bed10, livingroom10, kitchen10],
+    LQimages: [LQbed10, LQlivingroom10, LQkitchen10],
     capacity: 11,
     price: 8000,
     featured: true,

@@ -27,7 +27,11 @@ const Details = () => {
     <div className={style.details} id="details">
       {loaded ? (
         <>
-          <Slider title={product.title} images={product.images} />
+          <Slider
+            title={product.title}
+            images={product.images}
+            LQimages={product.LQimages}
+          />
           <div className={style.row}>
             <div className={style.description}>
               <h2>

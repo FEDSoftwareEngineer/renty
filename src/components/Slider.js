@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import style from "../styles/Slider.module.css";
 
+//hook to update the index
 const useSlider = (initialIndex) => {
   const [currentIndex, setCurrentIndex] = useState(initialIndex);
 
@@ -10,8 +11,10 @@ const useSlider = (initialIndex) => {
   return [currentIndex, updateIndex];
 };
 
-const Slider = ({ title, images }) => {
+//slider component
+const Slider = ({ title, images, LQimages }) => {
   const [currentIndex, updateIndex] = useSlider(0);
+  const [blur, setBlur] = useState(true);
 
   useEffect(() => {
     const timerId = setInterval(() => {
@@ -26,9 +29,20 @@ const Slider = ({ title, images }) => {
     <>
       <div className={style.slider}>
         <div className={style.box}>
-          <div className={style.card}>
+          <div
+            className={style.card}
+            style={{
+              backgroundImage: `url(${LQimages[currentIndex]})`,
+              backgroundSize: "cover",
+            }}
+          >
             {
               <img
+                style={{
+                  filter: blur ? "blur(10px)" : "",
+                  transition: "0.25s",
+                }}
+                onLoad={() => setBlur(false)}
                 src={images[currentIndex]}
                 alt={title}
                 className={style.image}
@@ -39,15 +53,19 @@ const Slider = ({ title, images }) => {
           <div className={style.dots}>
             {images.map((item, index) => {
               return (
-                <img
-                  key={item + index}
-                  onClick={() => updateIndex(index)}
-                  src={item}
-                  alt={item + index}
+                <div
                   className={`${style.dot} ${
                     item === images[currentIndex] ? style.active : ""
                   }`}
-                />
+                  style={{
+                    backgroundImage: `url(${LQimages[index]})`,
+                    backgroundSize: "cover",
+                  }}
+                  key={item + index}
+                  onClick={() => updateIndex(index)}
+                >
+                  <img src={item} alt={item + index} />
+                </div>
               );
             })}
           </div>

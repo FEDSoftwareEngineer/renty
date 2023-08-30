@@ -33,6 +33,11 @@
   margin: 0 10px;
   transition: 0.25s;
   cursor: pointer;
+  overflow: hidden;
+}
+.dot img {
+  width: 100%;
+  height: auto;
 }
 .active {
   transition: 0.25s;
