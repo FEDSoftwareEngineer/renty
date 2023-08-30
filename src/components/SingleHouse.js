@@ -1,7 +1,6 @@
 import React from "react";
 import style from "../styles/SingleHouse.module.css";
 import { Link } from "react-router-dom";
-import loadingImg from "../images/loading.webp";
 import useProgressiveImg from "../Hooks/useProgressive";
 
 const SingleHouse = ({ data }) => {

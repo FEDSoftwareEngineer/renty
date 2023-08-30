@@ -1,15 +1,13 @@
 import React from "react";
 import style from "../styles/Hero.module.css";
-
 //icons
 import { FaSearch } from "react-icons/fa";
-
 //hooks
 import useProgressive from "../Hooks/useProgressive";
 
 //resources
 import bg from "../images/bg.webp";
-import LQbg from "../images/LQbg.webp";
+import LQbg from "../images/LQ/LQbg.webp";
 const Hero = () => {
   const [src, { blur }] = useProgressive(LQbg, bg);
   return (
