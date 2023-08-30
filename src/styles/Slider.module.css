@@ -9,6 +9,7 @@
   height: 400px;
   display: flex;
   overflow: hidden;
+  object-fit: cover;
 }
 
 .image {
